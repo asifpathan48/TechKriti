@@ -1,3 +1,4 @@
+/* Countdown Container */
 .countdown-container {
   position: relative;
   display: flex;
@@ -8,12 +9,16 @@
   background-image: url('../assets/background.jpeg'); /* Ensure the path is correct */
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Fixes background scrolling issues */
   color: #fff;
   padding: 50px 20px;
-  height: 100vh;
+  min-height: 100vh; /* Ensures full screen height */
+  width: 100%; /* Ensures full width */
   text-align: center;
+  overflow: hidden; /* Prevents scroll bars from appearing */
 }
 
+/* Background Overlay */
 .countdown-container::before {
   content: '';
   position: absolute;
@@ -25,6 +30,16 @@
   z-index: -1; /* Place it behind the content */
 }
 
+/* Ensures Full Page Coverage */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styles */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -45,6 +60,7 @@ h2 {
   color: orange;
 }
 
+/* Countdown Timer */
 .countdown-timer {
   display: flex;
   justify-content: center;
@@ -90,7 +106,7 @@ h2 {
 
   .time-block {
     margin-bottom: 10px; /* Add margin to separate the timer blocks */
-    width: 75%; /* Timer blocks will now take up 45% of the screen */
+    width: 95%; /* Timer blocks will now take up 75% of the screen */
     padding: 15px 20px;
   }
 
