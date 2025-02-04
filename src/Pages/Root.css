@@ -46,6 +46,10 @@ h1 {
   font-weight: bold;
   color: #f39c12; /* Golden color for better contrast */
   margin-top: -20px; /* Move the text upwards */
+  max-width: 90%; /* Prevents text overflow */
+  word-wrap: break-word; /* Ensures long words break properly */
+  text-align: center; /* Keeps text properly aligned */
+  padding: 0 10px; /* Adds spacing to prevent cut-off */
 }
 
 h1 span {
@@ -91,11 +95,14 @@ h2 {
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.5rem; /* Adjusted font size for better readability */
+    font-size: 1.4rem; /* Adjusted font size for better readability */
     margin-bottom: 20px;
     color: #f39c12;
     line-height: 1.4; /* Adjusted line height for better spacing */
     margin-top: 0; /* Remove the top margin to avoid overlap with navbar */
+    max-width: 90%; /* Prevents text from overflowing */
+    word-wrap: break-word; /* Ensures long words don't overflow */
+    padding: 0 15px; /* Adds spacing for better alignment */
   }
 
   /* Countdown timer styling for mobile */
@@ -106,7 +113,7 @@ h2 {
 
   .time-block {
     margin-bottom: 10px; /* Add margin to separate the timer blocks */
-    width: 95%; /* Timer blocks will now take up 75% of the screen */
+    width: 75%; /* Timer blocks will now take up 75% of the screen */
     padding: 15px 20px;
   }
 
