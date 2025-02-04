@@ -62,6 +62,10 @@ h1 span {
 h2 {
   font-size: 1.9rem;
   color: orange;
+  max-width: 90%; /* Prevents text overflow */
+  word-wrap: break-word; /* Ensures long words break properly */
+  text-align: center; /* Keeps text properly aligned */
+  padding: 0 10px; /* Adds spacing for better alignment */
 }
 
 /* Countdown Timer */
@@ -105,9 +109,14 @@ h2 {
     padding: 0 15px; /* Adds spacing for better alignment */
   }
 
-  h2{
-    word-wrap: break-word;
+  h2 {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+    max-width: 90%; /* Prevents text overflow */
+    word-wrap: break-word; /* Ensures long words don't overflow */
+    text-align: center; /* Keeps text properly aligned */
+    padding: 0 15px; /* Adds spacing for better alignment */
   }
+
   /* Countdown timer styling for mobile */
   .countdown-timer {
     flex-direction: column; /* Stack the timer blocks vertically */
