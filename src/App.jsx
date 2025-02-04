@@ -5,7 +5,7 @@ import Events from '../src/Pages/Events.jsx';
 import Contact from '../src/Pages/Contact.jsx';
 import SignIn from '../src/Pages/Register.jsx';
 import Root from './Pages/Root.jsx';
-import Home from './pages/Home.jsx';
+import Home from './Pages/Home.jsx';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Root />} /> 
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<SignIn />} />
