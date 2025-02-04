@@ -105,6 +105,9 @@ h2 {
     padding: 0 15px; /* Adds spacing for better alignment */
   }
 
+  h2{
+    word-wrap: break-word;
+  }
   /* Countdown timer styling for mobile */
   .countdown-timer {
     flex-direction: column; /* Stack the timer blocks vertically */
