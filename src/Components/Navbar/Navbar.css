@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  background-color: black; /* Navbar background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo and Toggle Alignment */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Logo Styling */
+.nav-logo {
+  height: 100px; /* Logo size for desktop */
+  width: auto;
+  zoom: 100%;
+}
+
+/* Nav Links (Desktop View) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff; /* Hover color */
+}
+
+/* Toggle Button (Hidden on Desktop) */
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design (Mobile) */
+@media (max-width: 768px) {
+    /* Adjust nav-header for mobile: Logo and Toggle Button in same row */
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    /* Increase logo size on mobile */
+    .nav-logo {
+      height: 120px; /* Increased logo size */
+    }
+  
+    /* Show toggle button on mobile */
+    .nav-toggle {
+      display: block;
+    }
+  
+    /* Hide nav-links by default on mobile */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: black;
+      padding-top: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+  
+    /* Show nav-links when menu is open */
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li {
+      padding: 8px 20px; /* Add left padding for spacing */
+      text-align: left;
+      font-size: 16px; /* Adjust font size */
+      width: 100%;
+    }
+  
+    /* Adjust the logo and links alignment for mobile */
+    .nav-links {
+      top: 120px; /* Start after the logo, avoid overlap */
+      left: 0;
+      width: 100%;
+      max-height: calc(100vh - 120px); /* Allow links to fill the screen, but leave space for the logo */
+    }
+  }
+  

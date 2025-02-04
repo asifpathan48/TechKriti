@@ -1,0 +1,40 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    background-image: url("../assets/background.jpeg");
+    color: white;
+  }
+  
+  .home-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  span{
+    color: aqua;
+  }
+  
+  h2{
+    font-size: 35px;
+    color: lightskyblue;
+  }
+
+  h3{
+    font-size: 40px;
+  }
+
+  .events-link{
+    font-size: 35px;
+  }
+
+  .home-content p {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  

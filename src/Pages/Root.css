@@ -1,0 +1,105 @@
+.countdown-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937; /* Dark background color */
+  background-image: url('../assets/background.jpeg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 50px 20px;
+  height: 100vh;
+  text-align: center;
+}
+
+.countdown-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 1.8); /* Reduced transparency */
+  z-index: -1; /* Place it behind the content */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #f39c12; /* Golden color for better contrast */
+  margin-top: -20px; /* Move the text upwards */
+}
+
+h1 span {
+  color: lightgreen;
+  background-color: black;
+  border: black;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 1.9rem;
+  color: orange;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-block {
+  background-color: rgba(7, 146, 192, 0.7); /* Semi-transparent background for readability */
+  padding: 20px 30px;
+  border-radius: 25px; /* Rounded corners for the timer boxes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.time-block p:first-child {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.time-block p:last-child {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #bbb;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Adjusted font size for better readability */
+    margin-bottom: 20px;
+    color: #f39c12;
+    line-height: 1.4; /* Adjusted line height for better spacing */
+    margin-top: 0; /* Remove the top margin to avoid overlap with navbar */
+  }
+
+  /* Countdown timer styling for mobile */
+  .countdown-timer {
+    flex-direction: column; /* Stack the timer blocks vertically */
+    gap: 10px; /* Adjust gap for better spacing */
+  }
+
+  .time-block {
+    margin-bottom: 10px; /* Add margin to separate the timer blocks */
+    width: 75%; /* Timer blocks will now take up 45% of the screen */
+    padding: 15px 20px;
+  }
+
+  /* Adjust font size for mobile view */
+  .time-block p:first-child {
+    font-size: 2rem; /* Adjusted font size for better readability */
+  }
+
+  .time-block p:last-child {
+    font-size: 0.9rem; /* Smaller text for labels */
+  }
+}
