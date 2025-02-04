@@ -134,7 +134,7 @@ h2 {
 
   .time-block {
     margin-bottom: 10px; /* Add margin to separate the timer blocks */
-    width: 75%; /* Timer blocks will now take up 75% of the screen */
+    width: 95%; /* Timer blocks will now take up 75% of the screen */
     padding: 15px 20px;
   }
 

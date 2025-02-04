@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Logo from '../../assets/logo.png';
+import HamburgerMenu from '../../assets/hamburger.png';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
