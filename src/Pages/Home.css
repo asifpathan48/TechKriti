@@ -5,7 +5,6 @@
   height: 100vh;
   text-align: center;
   background: linear-gradient(to right, #4b6cb7, #182848);
-  background-image: url("../assets/background.jpeg");
   background-size: cover; /* Ensures the background covers the full area */
   background-position: center;
   background-repeat: no-repeat;

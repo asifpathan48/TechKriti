@@ -6,7 +6,6 @@
   justify-content: center; /* Centers vertically */
   align-items: center; /* Centers horizontally */
   background-color: #1F2937; /* Dark background color */
-  background-image: url('../assets/background.jpeg'); /* Ensure the path is correct */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Fixes background scrolling issues */
@@ -50,13 +49,6 @@ h1 {
   word-wrap: break-word; /* Ensures long words break properly */
   text-align: center; /* Centers text */
   padding: 0 10px; /* Adds spacing to prevent cut-off */
-}
-
-h1 span {
-  color: lightgreen;
-  background-color: black;
-  border: black;
-  border-radius: 20px;
 }
 
 h2 {
