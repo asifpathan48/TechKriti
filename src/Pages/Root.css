@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: center; /* Centers vertically */
   align-items: center; /* Centers horizontally */
-  background-color: #1F2937; /* Dark background color */
+  background-color: darkmagenta; /* Dark background color */
+  background-image: url("../assets/new-background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Fixes background scrolling issues */
