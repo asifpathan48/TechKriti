@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact.jsx";
 import Sports from "./Pages/Sports.jsx";
 import About from "./Pages/About.jsx";
 import Footer from "./Components/Footer.jsx";
+import Feedback from "./Pages/Feedback.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/culturalevents" element={<CulturalEvents />} />
         <Route path="/sports" element={<Sports />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/feedback" element={<Feedback />} />
       </Routes>
       <Footer/>
     </Router>

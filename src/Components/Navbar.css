@@ -63,7 +63,8 @@
     }
   
     .logo-img {
-      height: 150px; /* Adjust logo size for mobile */
+      height: 200px; 
+      width: 250px;/* Adjust logo size for mobile */
     }
   
     .nav-links {

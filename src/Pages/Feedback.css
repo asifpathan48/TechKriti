@@ -1,0 +1,158 @@
+/* Overall Background */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Form Container */
+form {
+    width: 100%;
+    max-width: 500px; /* Limit width for better containment */
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.4s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+form h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Input Field Container */
+.input-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Labels */
+.input-box label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+.input-box .field {
+    width: 100%; /* Ensure input fills the container */
+    height: 50px;
+    background: #f8f8f8;
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Textarea Styling */
+.input-box .field.mess {
+    height: 150px;
+    resize: none;
+}
+
+/* Input Focus Effect */
+.input-box .field:focus {
+    border-color: #fc5c7d;
+    box-shadow: 0 0 12px rgba(252, 92, 125, 0.3);
+}
+
+/* Button Styling */
+form button {
+    width: 100%;
+    height: 55px;
+    background: #fc5c7d;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+form button:hover {
+    background: #ff3b5b;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Active State */
+form button:active {
+    transform: translateY(2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effects for Input Fields */
+.input-box .field:hover {
+    border-color: #fc5c7d;
+    box-shadow: 0 0 10px rgba(252, 92, 125, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 25px;
+    }
+
+    form h2 {
+        font-size: 26px;
+    }
+
+    .input-box .field {
+        height: 45px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    form button {
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    form h2 {
+        font-size: 22px;
+    }
+
+    .input-box .field {
+        height: 40px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    form button {
+        height: 45px;
+        font-size: 14px;
+    }
+}

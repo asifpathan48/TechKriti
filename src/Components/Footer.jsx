@@ -27,6 +27,7 @@ const Footer = () => {
             <li><button onClick={() => handleNavigation("/culturalevents")}>Cultural Events</button></li>
             <li><button onClick={() => handleNavigation("/sports")}>Sports</button></li>
             <li><button onClick={() => handleNavigation("/contact")}>Contact</button></li>
+            <li><button onClick={() => handleNavigation("/feedback")}>FeedBack</button></li>
           </ul>
         </div>
       </div>
