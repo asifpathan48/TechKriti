@@ -40,8 +40,9 @@
 /* 🔹 Info Box with Clean Styling */
 .info-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
     background: rgba(255, 255, 255, 0.08); /* Light transparent background */
     border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 25px;
@@ -60,10 +61,10 @@
 
 /* 🔹 Image Styling */
 .info-box img {
-    width: 200px;
-    height: auto;
+    width: 100%;
+    max-width: 400px; /* Adjusted for better layout */
     border-radius: 10px;
-    margin-right: 25px;
+    margin-bottom: 15px;
     border: 4px solid #ffcc00;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
@@ -79,12 +80,13 @@
     color: #ffffff;
     text-align: justify;
     line-height: 1.6;
-    flex: 1;
-    padding: 0;
+    max-width: 750px;
+    margin: 10px 0;
+    padding: 0 10px;
 }
 
-/* 🔹 Stylish Button */
-.home-container button {
+/* 🔹 General Button Styling */
+.home-container button, .download-btn {
     padding: 12px 25px;
     font-size: 18px;
     background: linear-gradient(90deg, #ffcc00, #ff8800);
@@ -92,18 +94,26 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
 }
 
-.home-container button:hover {
+/* 🔹 Hover Effect for Buttons */
+.home-container button:hover, .download-btn:hover {
     background: linear-gradient(90deg, #ff8800, #ffcc00);
     transform: scale(1.08);
 }
 
-h2{
-    color: burlywood;
+/* 🔹 Download Poster Button Styling */
+.download-btn {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 14px 30px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 /* 🔹 Launch Gallery */
@@ -136,19 +146,21 @@ h2{
 /* 🔹 Mobile Responsive */
 @media (max-width: 768px) {
     .info-box {
-        flex-direction: column;
-        text-align: center;
         padding: 20px;
     }
 
     .info-box img {
         width: 100%;
         max-width: 250px;
-        margin-bottom: 15px;
     }
 
     .info-box p {
         font-size: 16px;
+    }
+
+    .info-box button, .download-btn {
+        width: 100%;
+        max-width: 250px;
     }
 
     .launch-gallery img {

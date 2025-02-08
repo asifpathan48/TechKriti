@@ -33,6 +33,10 @@ function About() {
         <p>
         Baba Institute of Technology & Sciences(BITS) was established in 2008 by a group of well-known acadeicians. They are pioneering educators, having unmatched experience in the field of education with a belief that the continuous search for knowledge is the sole path to success. The primary focus of the institution is to expose the young minds to the world of technology and business, instilling in them confidence and fortitude to face new challenges that enable them to excel in their chosen fields.
         </p>
+        <p><b>For more information about our College. 
+          <br/>
+          Click on the button below.</b></p>
+        <button onClick={() => window.open('https://bitsvizag.com', '_blank')}>Click Here</button>
       </div>
       <h2>About Our Department</h2>
       <div className="info-box">
@@ -42,9 +46,10 @@ function About() {
         </p>
       </div>
       <h3>Click on the below button, to see our <b>Poster</b></h3>
-      <button onClick={() => window.open('/PosterCopy.jpg', '_blank')}>
+        <button className="download-btn" onClick={() => window.open('/PosterCopy.jpg', '_blank')}>
         Download Poster
-      </button>
+        </button>
+
 
       <h2>TechKriti Launch Photos</h2>
       <br/>
