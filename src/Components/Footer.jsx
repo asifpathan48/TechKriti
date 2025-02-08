@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "./Footer.css"; // Import CSS file
+import { FaInstagram } from "react-icons/fa"; // Import Instagram icon
 
 const Footer = () => {
   const navigate = useNavigate(); // Initialize navigate function
@@ -19,6 +20,13 @@ const Footer = () => {
           <p>Made with ❤️ by <span className="team-name">TEAM TECHKRITI</span></p>
         </div>
 
+        {/* Instagram Handle */}
+        <div className="social-media">
+          <a href="https://www.instagram.com/t_ec_hkriti/?hl=en" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="instagram-icon" /> @t_ec_hkriti
+          </a>
+        </div>
+
         {/* Quick Links */}
         <div className="footer-links">
           <ul>
@@ -27,7 +35,7 @@ const Footer = () => {
             <li><button onClick={() => handleNavigation("/culturalevents")}>Cultural Events</button></li>
             <li><button onClick={() => handleNavigation("/sports")}>Sports</button></li>
             <li><button onClick={() => handleNavigation("/contact")}>Contact</button></li>
-            <li><button onClick={() => handleNavigation("/feedback")}>FeedBack</button></li>
+            <li><button onClick={() => handleNavigation("/feedback")}>Feedback</button></li>
           </ul>
         </div>
       </div>

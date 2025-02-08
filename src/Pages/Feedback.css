@@ -1,5 +1,7 @@
-/* Overall Background */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .contact {
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +21,6 @@ form {
     border-radius: 12px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     color: #333;
-    font-family: 'Arial', sans-serif;
     transition: transform 0.4s ease-in-out;
     box-sizing: border-box;
 }

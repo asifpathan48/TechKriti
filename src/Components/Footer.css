@@ -1,121 +1,170 @@
-/* Footer Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
 .footer {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-    font-family: "Poppins", sans-serif;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 0 20px;
-  }
-  
-  /* Made with Love Text */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+/* Made with Love Text */
+.footer-text {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.team-name {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+/* Social Media Section */
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  color: #f39c12;
+}
+
+/* Instagram Icon */
+.instagram-icon {
+  font-size: 20px;
+  color: #e4405f; /* Instagram brand color */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover .instagram-icon {
+  transform: scale(1.2);
+}
+
+/* Quick Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links ul li {
+  display: inline;
+}
+
+.footer-links ul li button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* Gradient Hover Effect */
+.footer-links ul li button:hover {
+  color: #f39c12;
+}
+
+/* Animated Underline */
+.footer-links ul li button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f39c12;
+  transition: width 0.3s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.footer-links ul li button:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer-text {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  
-  .team-name {
-    color: #f39c12;
-    font-weight: bold;
-  }
-  
-  /* Quick Links */
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .footer-links ul li {
-    display: inline;
-  }
-  
-  .footer-links ul li button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    padding: 8px 15px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-  
-  /* Gradient Hover Effect */
-  .footer-links ul li button:hover {
-    color: #f39c12;
-  }
-  
-  /* Animated Underline */
-  .footer-links ul li button::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #f39c12;
-    transition: width 0.3s;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-  }
-  
-  .footer-links ul li button:hover::after {
-    width: 100%;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-text {
       font-size: 16px;
-    }
-  
-    .footer-links ul {
+  }
+
+  .footer-links ul {
       flex-direction: column;
       text-align: center;
       gap: 10px;
-    }
-  
-    .footer-links ul li button {
+  }
+
+  .footer-links ul li button {
       font-size: 14px;
       padding: 5px 12px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .footer {
-      padding: 20px 10px;
-    }
-  
-    .footer-text {
+
+  .social-media {
       font-size: 14px;
-    }
-  
-    .footer-links ul {
+  }
+
+  .instagram-icon {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 20px 10px;
+  }
+
+  .footer-text {
+      font-size: 14px;
+  }
+
+  .footer-links ul {
       flex-direction: column;
       gap: 8px;
-    }
-  
-    .footer-links ul li button {
-      font-size: 14px;
-    }
   }
-  
+
+  .footer-links ul li button {
+      font-size: 14px;
+  }
+
+  .social-media {
+      font-size: 12px;
+  }
+
+  .instagram-icon {
+      font-size: 16px;
+  }
+}
