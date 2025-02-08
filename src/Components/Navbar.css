@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    font-family: "Poppins", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+    height: 55px;
+  }
+  
+  .navbar .logo a {
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    height: 190px; /* Reduced height */
+    width: auto; /* Keep aspect ratio */
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav-links li a:hover {
+    color: violet;    
+  }
+  
+  /* Hamburger menu styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for transformation */
+  }
+  
+  /* Mobile responsive styles */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+  
+    .logo-img {
+      height: 150px; /* Adjust logo size for mobile */
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 55px;
+      right: 0;
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: none; /* Hide menu by default */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    .nav-links li {
+      margin: 15px 0; /* Adjust spacing between links */
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Hamburger to cross effect */
+    .hamburger.open .bar:nth-child(1) {
+      transform: rotate(45deg); /* Rotate top bar to form cross */
+      transform-origin: 5px 5px;
+    }
+  
+    .hamburger.open .bar:nth-child(2) {
+      opacity: 0; /* Hide the middle bar */
+    }
+  
+    .hamburger.open .bar:nth-child(3) {
+      transform: rotate(-45deg); /* Rotate bottom bar to form cross */
+      transform-origin: 5px 5px;
+    }
+  }
+  

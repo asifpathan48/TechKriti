@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.sports-container {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-image: url("../assets/background-new.jpg");
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.sports-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Black with 50% transparency */
+  z-index: 1; /* Place the overlay above the background but below the content */
+}
+
+.sports-container h1 {
+  color: white;
+  font-size: 45px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+.section {
+  margin-top: 50px;
+  position: relative;
+  z-index: 2; /* Ensure section content is above the overlay */
+}
+
+.section h2 {
+  font-size: 38px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.games-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.game-box {
+  background-color: #fff;
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Ensure game boxes are above the overlay */
+}
+
+.game-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.game-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.game-details h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.game-details p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.register-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
