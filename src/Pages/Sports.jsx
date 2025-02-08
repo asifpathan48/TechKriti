@@ -91,11 +91,8 @@ function Sports() {
             <div className="game-details">
               <h3>PubG</h3>
               <p>Drop into the arena and be the last player standing!
-                <br/>
-                <br/>
-                <b>We will drop the registration link soon. Stay tuned!!</b>
               </p>
-              {/* <button className="register-btn" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSe4GZLtKB5UHpCd50kka1hJg4RnYkjF-p2pr3e6NvzCoenoOQ/viewform?usp=header", "_blank")}>Register</button> */}
+              <button className="register-btn" onClick={() => window.open("https://forms.gle/qgA9KefPv9CpMEhr5", "_blank")}>Register</button>
             </div>
           </div>
         </div>

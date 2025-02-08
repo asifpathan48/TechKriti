@@ -3,22 +3,11 @@
 .sports-container {
   font-family: "Poppins", sans-serif;
   position: relative;
-  background-image: url("../assets/background-new.jpg");
+  background: linear-gradient(135deg, #141e30, #243b55);
   background-size: cover;
   padding: 20px;
   text-align: center;
   background-color: #f4f4f4;
-}
-
-.sports-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8); /* Black with 50% transparency */
-  z-index: 1; /* Place the overlay above the background but below the content */
 }
 
 .sports-container h1 {
