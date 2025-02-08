@@ -2,8 +2,7 @@
 
 /* 🔹 Background & General Styling */
 .home-container {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    background-image: url("../assets//background-new.jpg");
+    background: linear-gradient(135deg, #141e30, #243b55); /* Modern gradient */
     font-family: "Poppins", serif;
     min-height: 100vh;
     color: #f5f5f5;
@@ -12,6 +11,7 @@
     position: relative;
 }
 
+/* 🔹 Headings */
 .home-container h1 {
     font-size: 35px;
 }
@@ -21,6 +21,13 @@
     margin-top: 15px;
 }
 
+.home-container h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+/* 🔹 Highlighted Text */
 .home-container b {
     color: gold;
 }
@@ -30,18 +37,12 @@
     font-size: 45px;
 }
 
-.home-container h3 {
-    font-size: 22px;
-    margin-top: 20px;
-    color: #ffcc00;
-}
-
 /* 🔹 Info Box with Clean Styling */
 .info-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(255, 255, 255, 0.05); /* Very light transparent white */
+    background: rgba(255, 255, 255, 0.08); /* Light transparent background */
     border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 25px;
     border-radius: 15px;
@@ -72,16 +73,14 @@
     filter: brightness(1.1);
 }
 
-/* 🔹 Text Styling (Now Without Any Background) */
+/* 🔹 Text Styling */
 .info-box p {
     font-size: 18px;
-    color: #ffffff;  /* Pure white text */
+    color: #ffffff;
     text-align: justify;
     line-height: 1.6;
     flex: 1;
-    padding: 0;  /* Removed padding to prevent background effect */
-    border-radius: 0;  /* Removed any background shape */
-    background: none;  /* Ensures no background for text */
+    padding: 0;
 }
 
 /* 🔹 Stylish Button */
@@ -103,6 +102,37 @@
     transform: scale(1.08);
 }
 
+h2{
+    color: burlywood;
+}
+
+/* 🔹 Launch Gallery */
+.launch-gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* 🔹 High-Quality Image Styling */
+.launch-gallery img {
+    width: 30%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    image-rendering: high-quality;
+}
+
+/* 🔹 Hover Effect */
+.launch-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
 /* 🔹 Mobile Responsive */
 @media (max-width: 768px) {
     .info-box {
@@ -119,5 +149,18 @@
 
     .info-box p {
         font-size: 16px;
+    }
+
+    .launch-gallery img {
+        width: 90%; /* Larger images for better clarity */
+        max-height: 300px;
+    }
+}
+
+/* 🔹 Desktop High-Quality Fix */
+@media (min-width: 1024px) {
+    .launch-gallery img {
+        width: 25%;
+        max-height: 400px;
     }
 }

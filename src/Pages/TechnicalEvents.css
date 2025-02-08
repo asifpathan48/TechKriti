@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
   padding: 50px;
   text-align: center;
-  background-image: url('../assets/background-new.jpg');
+  background: linear-gradient(135deg, #141e30, #243b55);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
