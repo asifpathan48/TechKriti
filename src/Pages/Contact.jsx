@@ -52,7 +52,7 @@ function Contact() {
           <div className="coordinator-cards">
             <div className="coordinator-box"><p><strong>Prasad (Final Year - B)</strong></p></div>
             <div className="coordinator-box"><p><strong>K. Uday Kiran (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Asif (Final Year)</strong></p></div>
+            <div className="coordinator-box"><p><strong>Asif Pathan(Final Year)</strong></p></div>
             <div className="coordinator-box"><p><strong>Karthik (2nd Year - A)</strong></p></div>
           </div>
         </div>
@@ -61,9 +61,9 @@ function Contact() {
           <h3>Sports Events</h3>
           <div className="coordinator-cards">
             <div className="coordinator-box"><p><strong>Ramani (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Satvik (Final Year)</strong></p></div>
+            <div className="coordinator-box"><p><strong>Satvik (Final Year - B)</strong></p></div>
             <div className="coordinator-box"><p><strong>G. Lakshmi (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>P. Yamini (Final Year - A)</strong></p></div>
+            <div className="coordinator-box"><p><strong>P. Yamini (Final Year - B )</strong></p></div>
             <div className="coordinator-box"><p><strong>Trisha Jhanshi (2nd Year - A)</strong></p></div>
           </div>
         </div>
@@ -72,9 +72,9 @@ function Contact() {
           <h3>Stage Committee</h3>
           <div className="coordinator-cards">
             <div className="coordinator-box"><p><strong>Sarvik (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Upendra (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>K. Lokesh (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>M. Bhogesh (Final Year - B)</strong></p></div>
+            <div className="coordinator-box"><p><strong>Upendra (Final Year - A)</strong></p></div>
+            <div className="coordinator-box"><p><strong>K. Lokesh (Final Year - A)</strong></p></div>
+            <div className="coordinator-box"><p><strong>M. Bhogesh (Final Year - A)</strong></p></div>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ function Contact() {
           <h3>Disciplinary Committee</h3>
           <div className="coordinator-cards">
             <div className="coordinator-box"><p><strong>P. Prudhvi (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>S. Mehtabh Ali (Final Year - A)</strong></p></div>
+            <div className="coordinator-box"><p><strong>S. Mehtabh Ali (Final Year - B)</strong></p></div>
             <div className="coordinator-box"><p><strong>Upendra (Final Year - A)</strong></p></div>
             <div className="coordinator-box"><p><strong>Ch. Varsha (Final Year - A)</strong></p></div>
             <div className="coordinator-box"><p><strong>Meenakshi (Final Year - A)</strong></p></div>
