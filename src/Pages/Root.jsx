@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Root.css';  // Import the CSS file for styling
 import WorkshopImage from "../assets/workshop.png";
+import FestLogo from "../assets/web-logo-new.jpeg";
 
 function Root() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -34,11 +35,11 @@ function Root() {
 
   return (
     <div className="root-container">
-      <h1>Countdown 
+      <h1>Here's the Countdown 
         <br/>
-        Of The Fest
-        <br/> 
-        Organized by 
+        for 
+        <br/>
+        <b >TECHKRITI</b>
         <br/>
         <span> ECE Department </span>
         <br/>

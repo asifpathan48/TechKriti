@@ -10,10 +10,10 @@
     position: relative;
     padding-bottom: 40px;
 }
-  
+
 .root-container > * {
     position: relative;
-    z-index: 2;  /* Ensure text content stays above the overlay */
+    z-index: 2;
     color: white;
     text-align: center;
 }
@@ -22,154 +22,182 @@
     color: white;
     font-size: 35px;
     padding-top: 50px;
-    margin-bottom: 10px;  /* Reduce space below the title */
+    margin-bottom: 10px;
 }
 
 .root-container span {
     color: violet;
 }
 
-/* Ensure the navbar and hamburger are above everything */
 .navbar {
     position: relative;
-    z-index: 3;  /* Ensure navbar is above the overlay */
+    z-index: 3;
 }
 
 .hamburger {
-    z-index: 4;  /* Ensure the hamburger icon stays clickable */
+    z-index: 4;
 }
 
-/* Countdown Timer CSS */
 .countdown {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;  /* Reduce the space between title and countdown */
-  flex-wrap: wrap;  /* Allow the boxes to wrap to the next line */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .countdown-box {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100px;
-  text-align: center;
-  margin: 2px;  /* Add margin between the boxes */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 2px;
 }
 
 .countdown-box span {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
 }
 
 .countdown-box p {
-  font-size: 1.2em;
-  margin-top: 10px;
-  font-weight: normal;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: normal;
 }
 
-.text-container{
-  padding-top: 20px;
-  color: white;
-
+.text-container {
+    padding-top: 20px;
+    color: white;
 }
 
-.text-container span{
-  color: orange;
+.text-container span {
+    color: orange;
 }
 
 .workshop-section {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  margin: 50px auto 0; /* Adds spacing from previous section */
-  position: relative;
-  z-index: 2;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
 }
 
 .workshop-section h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
 }
 
-.workshop-section .fusion-deposition{
-  color: black;
+.workshop-section .fusion-deposition {
+    color: black;
 }
 
 .workshop-name {
-  color: #ff6600;
+    color: #ff6600;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
 .workshop-image {
-  width: 100%;
-  max-height: 250px;
-  object-fit: contain;
-  border-radius: 5px;
-  margin-top: 15px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .workshop-section p {
-  font-size: 16px;
-  color: #333;
-  margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.workshop-section button {
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.workshop-section button:hover {
+    background-color: #e55b00;
 }
 
 /* Mobile responsive styles */
 @media screen and (max-width: 768px) {
-  .root-container h1 {
-    font-size: 28px; /* Smaller text size for mobile */
-  }
+    .root-container h1 {
+        font-size: 28px;
+    }
 
-  .countdown {
-    flex-direction: row;  /* Keep them in a row on tablets or small screens */
-  }
+    .countdown {
+        flex-direction: row;
+    }
 
-  .countdown-box {
-    width: 80px;  /* Smaller width for countdown boxes */
-    padding: 15px; /* Adjust padding for smaller screens */
-  }
+    .countdown-box {
+        width: 80px;
+        padding: 15px;
+    }
 
-  .countdown-box span {
-    font-size: 2em; /* Adjust font size for smaller screens */
-  }
+    .countdown-box span {
+        font-size: 2em;
+    }
 
-  .countdown-box p {
-    font-size: 1em; /* Adjust font size for smaller screens */
-  }
+    .countdown-box p {
+        font-size: 1em;
+    }
 
-  .workshop-section {
-    width: 90%;
-    padding: 30px;
-    margin: 60px auto;
-  }
+    .workshop-section {
+        width: 90%;
+        padding: 20px;
+        margin: 40px auto;
+    }
+
+    .workshop-image {
+        max-height: 250px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-  .root-container h1 {
-    font-size: 22px; /* Even smaller text size for smaller mobile devices */
-  }
+    .root-container h1 {
+        font-size: 22px;
+    }
 
-  .countdown-box {
-    width: 70px; /* Even smaller countdown boxes */
-    padding: 12px; /* Reduce padding further */
-  }
+    .countdown-box {
+        width: 70px;
+        padding: 12px;
+    }
 
-  .countdown-box span {
-    font-size: 1.8em; /* Further reduce font size */
-  }
+    .countdown-box span {
+        font-size: 1.8em;
+    }
 
-  .countdown-box p {
-    font-size: 0.9em; /* Further reduce font size */
-  }
+    .countdown-box p {
+        font-size: 0.9em;
+    }
 
-  .workshop-section {
-    width: 95%;  /* Slightly wider for small screens */
-    padding: 25px;
-    margin: 20px auto;  /* More space around the box */
-  }
+    .workshop-section {
+        width: 95%;
+        padding: 15px;
+        margin: 20px auto;
+    }
 
+    .workshop-image {
+        max-height: 200px;
+    }
 }
