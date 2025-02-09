@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Root.css';  // Import the CSS file for styling
+import WorkshopImage from "../assets/workshop.png";
 
 function Root() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -69,6 +70,21 @@ function Root() {
       <div className="text-container">
         <h2>Technical Events will be conducted from: <span>17/02/2025 to 19/02/2025</span></h2>
         <h2>Cultural Events will be conducted on: <span>24/02/2025 and 25/02/2025</span></h2>
+      </div>
+      <br/>
+      <h2 className="workshop-name">We have an exciting workshop on</h2>
+      {/* Separate Workshop Section */}
+      <div className="workshop-section">
+        <h2 className="fusion-deposition">Fusion Deposition Modelling</h2>
+        <img src={WorkshopImage} alt="Fusion Deposition Modelling Workshop" className="workshop-image" />
+        <p>Join our hands-on workshop on <strong>Fusion Deposition Modelling (FDM)</strong> and explore the fundamentals of 3D printing technology.</p>
+        <p><strong>Date:</strong> 18th & 19th February</p>
+        <button 
+          className="form-button"
+          onClick={() => window.open("https://forms.gle/nZNXdzGCoJPpuWAh6", "_blank")}
+        >
+          Register for Workshop
+        </button>
       </div>
     </div>
   );

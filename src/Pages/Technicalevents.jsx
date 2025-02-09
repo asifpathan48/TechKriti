@@ -5,7 +5,8 @@ import PaperPresentation from "../assets/paper-presentation.jpg";
 import PosterPresentation from "../assets/poster-presentation.png";
 import SpeedTyping from "../assets/SpeedTypingImage.jpg";
 import TechFunImage from "../assets/tech-fun-image.jpg";
-import WorkshopImage from "../assets/workshop-image.jpg"; 
+// import WorkshopImage from "../assets/workshop-image.jpg"; 
+import WorkshopImage from "../assets/workshop.png";
 
 function TechnicalEvents() {
   const categories = [
@@ -58,20 +59,6 @@ function TechnicalEvents() {
             </button>
           </div>
         ))}
-      </div>
-
-      {/* Separate Workshop Section */}
-      <div className="workshop-section">
-        <h2>Workshop: Fusion Deposition Modelling</h2>
-        <img src={WorkshopImage} alt="Fusion Deposition Modelling Workshop" className="workshop-image" />
-        <p>Join our hands-on workshop on <strong>Fusion Deposition Modelling (FDM)</strong> and explore the fundamentals of 3D printing technology.</p>
-        <p><strong>Date:</strong> 18th & 19th February</p>
-        <button 
-          className="form-button"
-          onClick={() => window.open("https://forms.gle/nZNXdzGCoJPpuWAh6", "_blank")}
-        >
-          Register for Workshop
-        </button>
       </div>
     </div>
   );

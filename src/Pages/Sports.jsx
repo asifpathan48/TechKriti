@@ -6,7 +6,6 @@ import CricketImage from '../assets/cricket-image.jpg';
 import VolleyBallImage from '../assets/volleyball-image.jpg';
 import KabbadiImage from '../assets/kabbadi-image.jpg';
 import ThrowBallImage from '../assets/throwball-image.jpg';
-import KhoKhoImage from '../assets/kho-kho.jpg';
 import FreeFire from '../assets/free-fire-image.jpg';
 import PubG from '../assets/pubg-image.jpg';
 
