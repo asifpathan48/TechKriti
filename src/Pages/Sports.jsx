@@ -58,7 +58,7 @@ function Sports() {
           <div className="game-box">
             <img src={KabbadiImage} alt="Kabbadi" className="game-image" />
             <div className="game-details">
-              <h3>Kabbadi For Girls</h3>
+              <h3>Kabbadi For Women</h3>
               <p>Get ready for an intense and action-packed game of Kabbadi!</p>
               <button className="register-btn" onClick={() => window.open("https://forms.gle/DRPVHfTYBuaBZ4BC7", "_blank")}>Register</button>
             </div>
