@@ -78,8 +78,8 @@
 .info-box p {
     font-size: 18px;
     color: #ffffff;
-    text-align: justify;
     line-height: 1.6;
+    text-align: left;
     max-width: 750px;
     margin: 10px 0;
     padding: 0 10px;

@@ -1,107 +1,87 @@
-import React from 'react';
-import './Contact.css';
+import React from "react";
+import "./Contact.css";
+import dummyImage from "../assets/dummy.jpg";
+import saiImage from "../assets/sai.jpeg";
+import upendraImage from "../assets/upendra.jpg";
+import sarvikImage from "../assets/sarvik.jpg";
+import prasadImage from "../assets/prasad.jpeg";
+import udayImage from "../assets/uday.jpg";
+import asifImage from "../assets/asif.jpeg";
+import mehatabImage from "../assets/mehatab.jpeg";
+import logoImage from "../assets/asif.jpeg"; // Add logo image path here
 
-function Contact() {
+// Contact Data
+const contacts = [
+  {
+    category: "Event Coordinators",
+    members: [
+      { name: "Sai", image: saiImage, phone: "+91 7981996529" },
+      { name: "Upendra", image: upendraImage, phone: "+91 7981274452" },
+      { name: "Sarvik", image: sarvikImage, phone: "+91 9059017723" },
+    ],
+  },
+  {
+    category: "Student Coordinators",
+    members: [
+      { name: "Tharun", image: dummyImage, phone: "+91 7032471698" },
+      { name: "Sonali", image: dummyImage, phone: "" }, // Removed phone number
+      { name: "Aravind", image: dummyImage, phone: "+91 7893961433" },
+    ],
+  },
+  {
+    category: "Social Media Coordinators",
+    members: [
+      { name: "Prasad", image: prasadImage, phone: "+91 6301974338" },
+      { name: "Uday Kiran", image: udayImage, phone: "+911 8317690919" },
+    ],
+  },
+  {
+    category: "Technical Coordinators",
+    members: [
+      { name: "Asif Pathan", image: asifImage, phone: "+91 6302152474" },
+      { name: "Mehatab Ali", image: mehatabImage, phone: "+91 7702465731" },
+      { name: "Yamini", image: dummyImage, phone: "" }, // Removed phone number
+    ],
+  },
+  {
+    category: "Discipline Coordinators",
+    members: [
+      { name: "Prudhvi", image: dummyImage, phone: "+91 6309803679" },
+      { name: "Sagar", image: dummyImage, phone: "+91 7396123920" },
+    ],
+  },
+];
+
+const Contact = () => {
   return (
     <div className="contact-container">
-      <h1>Team<br /><span>TECHKRITI</span></h1>
-      <hr/>
-      {/* Faculty Coordinators Section */}
-      <div className="coordinator-section">
-        <h2>Faculty Coordinators</h2>
-        
-        <div className="team-section">
-          <h3>Technical Events</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>Dr. Y. Bhaskar Lakshmi Mam</strong></p></div>
-            <div className="coordinator-box"><p><strong>Dr. Srilakshmi Mam</strong></p></div>
-          </div>
-        </div>
-
-        <div className="team-section">
-          <h3>Cultural Events</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>Ch. Komali Mam</strong></p></div>
-            <div className="coordinator-box"><p><strong>Ch. Santhoshi Mam</strong></p></div>
-          </div>
-        </div>
-
-        <div className="team-section">
-          <h3>Sports Events</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>T. Vishnu Sir</strong></p></div>
-            <div className="coordinator-box"><p><strong>K. Pradeep Sir</strong></p></div>
-          </div>
-        </div>
-
-        <div className="team-section">
-          <h3>Stage Coordinators</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>Ch. Komali Mam</strong></p></div>
-            <div className="coordinator-box"><p><strong>Ch. Santhoshi Mam</strong></p></div>
-          </div>
-        </div>
+      {/* First Section */}
+      <div className="first-section">
+        <img src={logoImage} alt="Logo" className="logo" />
+        <h3>Asif Pathan</h3>
+        <p className="developer-name">Technical Coordinator & Website Developer</p>
       </div>
-      <hr/>
-      {/* Student Coordinators Section */}
-      <div className="coordinator-section">
-        <h2>Student Coordinators</h2>
 
-        <div className="team-section">
-          <h3>Social Media</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>Prasad (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>K. Uday Kiran (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Asif Pathan(Final Year)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Karthik (2nd Year - A)</strong></p></div>
+      {/* Contact Sections */}
+      {contacts.map((section, index) => (
+        <div key={index} className="contact-section">
+          <h2 className="section-title">{section.category}</h2>
+          <div className="contact-grid">
+            {section.members.map((member, idx) => (
+              <div key={idx} className="contact-card">
+                <img src={member.image} alt={member.name} />
+                <h3 className="contact-name">{member.name}</h3>
+                {/* Display Coordinator Category */}
+                <p className="contact-category">{section.category}</p>
+                {/* Show phone number only if it's available */}
+                {member.phone && <p className="contact-number">📞 {member.phone}</p>}
+              </div>
+            ))}
           </div>
         </div>
-
-        <div className="team-section">
-          <h3>Sports Events</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>Ramani (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Satvik (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>G. Lakshmi (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>P. Yamini (Final Year - B )</strong></p></div>
-            <div className="coordinator-box"><p><strong>Trisha Jhanshi (2nd Year - A)</strong></p></div>
-          </div>
-        </div>
-
-        <div className="team-section">
-          <h3>Stage Committee</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>Sarvik (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Upendra (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>K. Lokesh (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>M. Bhogesh (Final Year - A)</strong></p></div>
-          </div>
-        </div>
-
-        <div className="team-section">
-          <h3>Disciplinary Committee</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>P. Prudhvi (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>S. Mehtabh Ali (Final Year - B)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Upendra (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Ch. Varsha (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Meenakshi (Final Year - A)</strong></p></div>
-          </div>
-        </div>
-
-        <div className="team-section">
-          <h3>Culturals Coordinator</h3>
-          <div className="coordinator-cards">
-            <div className="coordinator-box"><p><strong>P. Kesav Varma (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>G. Chandini (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>L. Yashoda (Final Year - A)</strong></p></div>
-            <div className="coordinator-box"><p><strong>Ch. Aravind (3rd Year)</strong></p></div>
-            <div className="coordinator-box"><p><strong>T. Mounika (2nd Year - B)</strong></p></div>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
-}
+};
 
 export default Contact;
