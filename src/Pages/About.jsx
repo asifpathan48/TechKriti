@@ -13,6 +13,7 @@ import LaunchImage8 from '../assets/ravikishoresir.jpeg';
 import LaunchImage9 from '../assets/fourmadams.jpeg';
 import PrincipalSirImage from '../assets/principal.jpeg';
 import AnilSirImage from '../assets/anil.jpeg';
+import RavindraSirImage from '../assets/ravindrasir.jpeg';
 
 function About() {
   return (
@@ -65,6 +66,7 @@ function About() {
         <img src={LaunchImage8} alt="launch 8" />
         <img src={LaunchImage6} alt="launch 6" />
         <img src={LaunchImage9} alt="launch 9" />
+        <img src={RavindraSirImage} alt="Ravindra Sir Image" />
         
       </div>
 
