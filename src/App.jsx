@@ -10,7 +10,7 @@ import About from "./Pages/About.jsx";
 import Footer from "./Components/Footer.jsx";
 import Feedback from "./Pages/Feedback.jsx";
 import Preloader from "./Preloaders/Preloader.jsx"; // Import the new Preloader component
-
+import './index.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
