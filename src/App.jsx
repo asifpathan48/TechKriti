@@ -10,7 +10,7 @@ import About from "./Pages/About.jsx";
 import Footer from "./Components/Footer.jsx";
 import Feedback from "./Pages/Feedback.jsx";
 import Preloader from "./Preloaders/Preloader.jsx"; // Import the new Preloader component
-import CustomScrollbar from "./Components/CustomScrollbar";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,7 +23,6 @@ function App() {
 
   return (
     <Router>
-      <CustomScrollbar /> {/* Ensure it wraps everything */}
       {loading ? <Preloader /> : null} {/* Show preloader while loading */}
       {!loading && ( // Render the main content only after loading is complete
         <>
