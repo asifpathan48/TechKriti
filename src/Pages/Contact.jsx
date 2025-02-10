@@ -4,14 +4,13 @@ import AsifImage from '../assets/asif.jpeg';
 import AravindImage from '../assets/aravindImage.jpeg';
 import SaiImage from '../assets/sai.jpeg';
 import UpendraImage from '../assets/upendra.jpg';
-import SarvikImage from '../assets/sarvik.JPG';
+import SarvikImage from '../assets/sarvik.jpg';
 import TharunImage from '../assets/tharun.jpeg';
 import PrasadImage from '../assets/prasad.jpeg';
 import UdayKiranImage from '../assets/uday.jpg';
 import MehatabImage from '../assets/mehatab.jpeg';
 import YaminiImage from '../assets/yamini.jpeg';
 import PrudhviImage from '../assets/prudhvi.jpeg';
-import dummyImage from "../assets/dummy.jpg";
 import SagarImage from '../assets/sagar.jpeg';
 import SonaliImage from '../assets/sonali.jpeg';
 
