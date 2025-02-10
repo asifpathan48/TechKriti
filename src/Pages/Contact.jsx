@@ -9,6 +9,9 @@ import udayImage from "../assets/uday.jpg";
 import asifImage from "../assets/asif.jpeg";
 import mehatabImage from "../assets/mehatab.jpeg";
 import logoImage from "../assets/asif.jpeg"; // Add logo image path here
+import yaminiImage from "../assets/yamini.jpeg";
+import tharunImage from "../assets/tharun.jpeg";
+import prudhviImage from "../assets/prudhvi.jpeg";
 
 // Contact Data
 const contacts = [
@@ -23,7 +26,7 @@ const contacts = [
   {
     category: "Student Coordinators",
     members: [
-      { name: "Tharun", image: dummyImage, phone: "+91 7032471698" },
+      { name: "Tharun", image: tharunImage, phone: "+91 7032471698" },
       { name: "Sonali", image: dummyImage, phone: "" }, // Removed phone number
       { name: "Aravind", image: dummyImage, phone: "+91 7893961433" },
     ],
@@ -40,13 +43,13 @@ const contacts = [
     members: [
       { name: "Asif Pathan", image: asifImage, phone: "+91 6302152474" },
       { name: "Mehatab Ali", image: mehatabImage, phone: "+91 7702465731" },
-      { name: "Yamini", image: dummyImage, phone: "" }, // Removed phone number
+      { name: "Yamini", image: yaminiImage, phone: "" }, // Removed phone number
     ],
   },
   {
     category: "Discipline Coordinators",
     members: [
-      { name: "Prudhvi", image: dummyImage, phone: "+91 6309803679" },
+      { name: "Prudhvi", image: prudhviImage, phone: "+91 6309803679" },
       { name: "Sagar", image: dummyImage, phone: "+91 7396123920" },
     ],
   },
