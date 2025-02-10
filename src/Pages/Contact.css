@@ -1,188 +1,196 @@
-/* General Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #00b4d8, #0077b6); /* Gradient for the whole page */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  padding-top: 80px;
 }
 
-/* First Section */
-.first-section {
+.contact-box {
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 25px;
   text-align: center;
-  padding: 40px 20px;
-  background: #ffffff;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Increased shadow for more depth */
-  margin-top: 40px; /* Added space above first section */
-  margin-bottom: 40px; /* Space after first section */
-  border-radius: 12px;
-  max-width: 90%; /* Reduce width of first section */
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid #000; /* Black border for first section */
+  width: 350px;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 
-.first-section h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
+.contact-box:hover {
+  transform: scale(1.05);
 }
 
-.first-section h3 {
+.contact-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #0077b6;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-name {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff;
-  margin-bottom: 10px;
+  color: #1f2937;
+  margin-top: 15px;
 }
 
-.first-section .logo {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.first-section .developer-name {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #333;
-}
-
-/* Coordinator Section Box */
-.contact-section {
-  margin-bottom: 20px;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-  border: 3px solid #000; /* Black border for section boxes */
-  max-width: 90%; /* Reduce width of coordinator sections */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Section Title */
-.section-title {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
-  text-align: center;
-}
-
-/* Coordinator Cards Grid */
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-/* Individual Contact Card */
-.contact-card {
-  background: #ffffff;
-  border: 3px solid #000; /* Black border for the cards */
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Darker shadow for depth */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-.contact-card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #007bff; /* Blue border around images */
-  margin-bottom: 10px;
-}
-
-.contact-card .contact-name {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #222;
-}
-
-.contact-card .contact-number {
-  font-size: 1.1rem;
-  color: #555;
+.contact-role {
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 500;
   margin-top: 5px;
 }
 
-/* Hide phone number for Sonali and Yamini */
-.contact-card.sonali .contact-number,
-.contact-card.yamini .contact-number {
-  display: none;
+/* Specific Coordinator Section */
+.event-coordinators,
+.student-coordinators,
+.social-media-coordinators,
+.technical-coordinators,
+.discipline-coordinators {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-/* Mobile responsive adjustments */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.coordinator-cards,
+.event-coordinator-cards,
+.student-coordinator-cards,
+.social-media-coordinator-cards,
+.technical-coordinator-cards,
+.discipline-coordinator-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.coordinator-card {
+  background: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.coordinator-card:hover {
+  transform: scale(1.05);
+}
+
+.coordinator-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077b6;
+  margin-bottom: 10px;
+}
+
+.coordinator-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.coordinator-phone {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-  /* First Section */
-  .first-section h2 {
-    font-size: 1.6rem; /* Reduced font size */
+  .contact-container {
+    padding-top: 40px;  /* Adjust padding for mobile */
   }
 
-  .first-section h3 {
-    font-size: 1.3rem; /* Reduced font size */
+  .contact-box {
+    width: 90%;  /* Adjust width for mobile */
+    padding: 15px;  /* Reduce padding */
+    margin-bottom: 20px;  /* Space between sections */
   }
 
-  .first-section .developer-name {
-    font-size: 1.1rem; /* Adjusted font size */
+  .contact-image {
+    width: 220px;  /* Adjust image size */
+    height: 220px;  /* Adjust image size */
   }
 
-  /* Contact Section */
-  .contact-section {
-    padding: 12px;
-    border: 3px solid #000; /* Black border for each section */
-    margin-bottom: 20px; /* Add space between sections */
+  .contact-name {
+    font-size: 1.4rem;  /* Adjust font size for name */
+  }
+
+  .contact-role {
+    font-size: 0.9rem;  /* Adjust font size for role */
+  }
+
+  /* Stack coordinator cards vertically on mobile */
+  .coordinator-cards,
+  .event-coordinator-cards,
+  .student-coordinator-cards,
+  .social-media-coordinator-cards,
+  .technical-coordinator-cards,
+  .discipline-coordinator-cards {
+    flex-direction: column;
+    gap: 15px;  /* Reduced gap between cards */
+    align-items: center;  /* Centered the cards */
+  }
+
+  .coordinator-card {
+    width: 95%;  /* Increase width slightly for larger cards */
+    padding: 15px;  /* Added a little more padding */
+  }
+
+  .coordinator-image {
+    width: 160px;  /* Adjust image size for mobile */
+    height: 160px;  /* Adjust image size for mobile */
+  }
+
+  .coordinator-name {
+    font-size: 1.2rem;  /* Adjust name font size */
+  }
+
+  .coordinator-phone {
+    font-size: 0.9rem;  /* Adjust phone font size */
   }
 
   .section-title {
-    font-size: 1.5rem; /* Smaller section title */
+    font-size: 1.5rem;  /* Reduced section title font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-box {
+    width: 90%;  /* Almost full width */
+    padding: 10px;  /* Further reduce padding */
+    margin-bottom: 15px;  /* Space between sections */
   }
 
-  /* Grid Layout */
-  .contact-grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Auto-fit cards */
+  .contact-image {
+    width: 180px;  /* Slightly smaller image size */
+    height: 180px;  /* Slightly smaller image size */
   }
 
-  /* Contact Cards */
-  .contact-card {
-    padding: 18px;
-    border: 3px solid #000; /* Black border for each card */
-    margin: 10px auto; /* Add spacing between cards */
-    border-radius: 8px; /* Rounded corners */
-    width: 100%; /* Full width */
-    max-width: 280px; /* Limit the width of the cards */
-    text-align: center;
+  .coordinator-image {
+    width: 140px;  /* Slightly larger image size */
+    height: 140px;  /* Slightly larger image size */
   }
 
-  .contact-card img {
-    width: 90px; /* Adjust image size */
-    height: 90px; /* Adjust image size */
-    border-radius: 50%; /* Round images */
-    margin-bottom: 10px;
+  .coordinator-name {
+    font-size: 1.1rem;  /* Slightly larger name font size */
   }
 
-  .contact-card .contact-name {
-    font-size: 1.1rem; /* Adjust name font size */
-  }
-
-  .contact-card .contact-number {
-    font-size: 1rem; /* Adjust phone number font size */
-  }
-
-  /* Logo size adjustment */
-  .logo {
-    width: 70px;
-    height: auto;
-    margin-bottom: 10px;
+  .coordinator-phone {
+    font-size: 0.8rem;  /* Slightly smaller phone font size */
   }
 }
