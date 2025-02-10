@@ -32,7 +32,7 @@ const contacts = [
     category: "Social Media Coordinators",
     members: [
       { name: "Prasad", image: prasadImage, phone: "+91 6301974338" },
-      { name: "Uday Kiran", image: udayImage, phone: "+911 8317690919" },
+      { name: "Uday Kiran", image: udayImage, phone: "+91 8317690919" },
     ],
   },
   {
