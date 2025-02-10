@@ -11,6 +11,7 @@ import Footer from "./Components/Footer.jsx";
 import Feedback from "./Pages/Feedback.jsx";
 import Preloader from "./Preloaders/Preloader.jsx"; // Import the new Preloader component
 import './index.css';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ function App() {
       {!loading && ( // Render the main content only after loading is complete
         <>
           <Navbar />
+          <Analytics/>
           <Routes>
             <Route path="/" element={<Root />} />
             <Route path="/about" element={<About />} />
