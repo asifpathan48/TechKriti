@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import AsifImage from '../assets/asif.jpeg';
-import AravindImage from "../assets/aravindImage.jpeg";
+import AravindImage from '../assets/aravindImage.jpeg';
 import SaiImage from '../assets/sai.jpeg';
 import UpendraImage from '../assets/upendra.jpg';
 import SarvikImage from '../assets/sarvik.JPG';
@@ -11,6 +11,7 @@ import UdayKiranImage from '../assets/uday.jpg';
 import MehatabImage from '../assets/mehatab.jpeg';
 import YaminiImage from '../assets/yamini.jpeg';
 import PrudhviImage from '../assets/prudhvi.jpeg';
+import dummyImage from "../assets/dummy.jpg";
 import SagarImage from '../assets/sagar.jpeg';
 import SonaliImage from '../assets/sonali.jpeg';
 
