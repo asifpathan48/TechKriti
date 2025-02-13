@@ -23,7 +23,10 @@ const Footer = () => {
         {/* Instagram Handle */}
         <div className="social-media">
           <a href="https://www.instagram.com/t_ec_hkriti/?hl=en" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="instagram-icon" /> @t_ec_hkriti
+            <FaInstagram className="instagram-icon" />@t_ec_hkriti
+          </a>
+          <a href="https://www.instagram.com/baba_clg_antaru_ra_baabuuu?igsh=dnd3OGQzbHRvdjE5" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="instagram-icon" />@baba_clg_antaru_ra_baabuuu
           </a>
         </div>
 

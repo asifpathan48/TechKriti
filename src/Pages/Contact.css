@@ -147,7 +147,7 @@
   }
 
   .coordinator-card {
-    width: 95%;  /* Increase width slightly for larger cards */
+    width: 100%;  /* Increase width slightly for larger cards */
     padding: 15px;  /* Added a little more padding */
   }
 
@@ -182,8 +182,8 @@
   }
 
   .coordinator-image {
-    width: 140px;  /* Slightly larger image size */
-    height: 140px;  /* Slightly larger image size */
+    width: 160px;  /* Slightly larger image size */
+    height: 160px;  /* Slightly larger image size */
   }
 
   .coordinator-name {
