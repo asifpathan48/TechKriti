@@ -13,7 +13,7 @@ const eventsData = [
     image: QuizImage,
     description: "Test your technical and business knowledge in our exciting quiz competition.",
     rules: [
-      "Each team consists of 4 participants.",
+      "Each team consists of 2 participants.",
       "Two Rounds: Preliminary & Final.",
       "Time-based answering system."
     ],
@@ -36,6 +36,7 @@ const eventsData = [
       "Any Recent technologies..",
       "Maximum 2 participants per team.",
       "PPT should be maximum of 15 Slides.",
+      "Share your PPT to email: techkriti2k25@gmail.com",
       "Presentation time: 10 minutes."
     ],
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdXwhEFAFeEl4Q4uaE8AactH0BhWcZKhtkPVR0BRpR1os7WXw/viewform",
