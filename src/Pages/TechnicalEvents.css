@@ -30,6 +30,26 @@
   text-align: center;
 }
 
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.prizes-text {
+  animation: blink 1s infinite; /* Blinks every 1 second */
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.prizes-image{
+  height: auto;
+  width: 300px;
+  border-radius: 250px;
+object-fit: contain;
+}
+
 .outer-box {
   background-color: rgba(255, 255, 255, 0.9);
   border: 4px solid black;

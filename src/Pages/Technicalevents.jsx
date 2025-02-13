@@ -5,6 +5,7 @@ import PaperPresentation from "../assets/paper-presentation.jpg";
 import PosterPresentation from "../assets/poster-presentation.png";
 import SpeedTyping from "../assets/SpeedTypingImage.jpg";
 import TechFunImage from "../assets/tech-fun-image.jpg";
+import WinPrizesImage from "../assets/Win Cash Prizes.png";
 
 const eventsData = [
   {
@@ -104,7 +105,8 @@ function TechnicalEvents() {
       <h1 className="registration-deadline">Registration closes by: 
         <br/>
         14th Feb 2025</h1>
-
+      <br/>
+    <img src={WinPrizesImage} alt="prizes" className="prizes-image" />
       <div className="events-grid">
         {eventsData.map((event) => (
           <div key={event.id} className={`event-box ${expandedEvent === event.id ? "expanded" : ""}`}>
