@@ -100,7 +100,9 @@ function TechnicalEvents() {
   return (
     <div className="technicalevents-container">
       <h1 className="h1-container">Technical Events</h1>
-      <h1 className="registration-deadline">Registration closes by: 14th Feb 2025</h1>
+      <h1 className="registration-deadline">Registration closes by: 
+        <br/>
+        14th Feb 2025</h1>
 
       <div className="events-grid">
         {eventsData.map((event) => (
