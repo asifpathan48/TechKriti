@@ -75,12 +75,13 @@ function Root() {
         <img src={WorkshopImage} alt="Fusion Deposition Modelling Workshop" className="workshop-image" />
         <p>Join our hands-on workshop on <strong>Fused Deposition Modelling (FDM)</strong> and explore the fundamentals of 3D printing technology.</p>
         <p><strong>Date:</strong> 17th, 18th & 19th February</p>
-        <button 
+        <h2>Registration's have been closed!!</h2>
+                {/* <button 
           className="form-button"
           onClick={() => window.open("https://forms.gle/nZNXdzGCoJPpuWAh6", "_blank")}
         >
           Register for Workshop
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -102,11 +102,8 @@ function TechnicalEvents() {
   return (
     <div className="technicalevents-container">
       <h1 className="h1-container">Technical Events</h1>
-      <h1 className="registration-deadline">Registrations Extended 
-        <br/>
-        closes by: 
-        <br/>
-        16th Feb 2025 09:00 PM</h1>
+      <h1 className="registration-deadline">Registrations have been CLOSED!!
+        </h1>
       <br/>
     <img src={WinPrizesImage} alt="prizes" className="prizes-image" />
       <div className="events-grid">
@@ -116,9 +113,9 @@ function TechnicalEvents() {
             <img src={event.image} alt={event.title} className="category-image" />
             <p>{event.description}</p>
 
-            <button className="form-button" onClick={() => window.open(event.registrationLink, "_blank")}>
+            {/* <button className="form-button" onClick={() => window.open(event.registrationLink, "_blank")}>
               Register Now
-            </button>
+            </button> */}
             <br/>
             <button className="know-more-button" onClick={() => toggleEventDetails(event.id)}>
               {expandedEvent === event.id ? "Show Less" : "Know More"}
@@ -146,9 +143,15 @@ function TechnicalEvents() {
       </div>
 
       <br />
-      <button className="technical-combo-registration" onClick={() => window.open("https://forms.gle/q8Q2T9mqhVTvF2QP7", "_blank")}>
+      <h1 className="coordinator-text">
+      <br/>
+        If you want to register, Meet the Technical Coordinators 
+        <br/>
+        At College by 10:00 AM
+      </h1>
+      {/* <button className="technical-combo-registration" onClick={() => window.open("https://forms.gle/q8Q2T9mqhVTvF2QP7", "_blank")}>
         Technical Events Combo Registration
-      </button>
+      </button> */}
     </div>
   );
 }

@@ -120,6 +120,10 @@ object-fit: contain;
   margin-top: 20px;
 }
 
+.coordinator-text{
+  color: white;
+}
+
 /* Registration Button */
 .form-button {
   background-color: #28a745;
