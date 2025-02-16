@@ -102,9 +102,11 @@ function TechnicalEvents() {
   return (
     <div className="technicalevents-container">
       <h1 className="h1-container">Technical Events</h1>
-      <h1 className="registration-deadline">Registration closes by: 
+      <h1 className="registration-deadline">Registrations Extended 
         <br/>
-        14th Feb 2025</h1>
+        closes by: 
+        <br/>
+        16th Feb 2025 09:00 PM</h1>
       <br/>
     <img src={WinPrizesImage} alt="prizes" className="prizes-image" />
       <div className="events-grid">

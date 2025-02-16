@@ -12,6 +12,7 @@ import Feedback from "./Pages/Feedback.jsx";
 import Preloader from "./Preloaders/Preloader.jsx"; // Import the new Preloader component
 import './index.css';
 import { Analytics } from "@vercel/analytics/react"
+import Sponsors from "./Pages/Sponsors.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,6 +38,7 @@ function App() {
             <Route path="/sports" element={<Sports />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/feedback" element={<Feedback />} />
+            <Route path="/sponsors" element={<Sponsors/>}/>
           </Routes>
           <Footer />
         </>

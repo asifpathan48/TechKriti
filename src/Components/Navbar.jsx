@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import WebLogoNew from '../assets/removed-background-logo.png';
+import WebLogoNew from '../assets/techkriti.png';
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,11 +25,13 @@ const Navbar = () => {
       </div>
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
+        <li><Link to="/sponsors" onClick={() => setIsMenuOpen(false)}>Sponsors</Link></li>
         <li><Link to="/technicalevents" onClick={() => setIsMenuOpen(false)}>Technical Events</Link></li>
         <li><Link to="/culturalevents" onClick={() => setIsMenuOpen(false)}>Cultural Events</Link></li>
         <li><Link to="/sports" onClick={() => setIsMenuOpen(false)}>Sports</Link></li>
         <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
-        <li><Link to="/feedback" onClick={() => setIsMenuOpen(false)}>FeedBack</Link></li>
+        {/* <li><Link to="/feedback" onClick={() => setIsMenuOpen(false)}>FeedBack</Link></li> */}
+        
       </ul>
     </nav>
   );
