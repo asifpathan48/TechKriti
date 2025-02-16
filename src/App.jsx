@@ -11,7 +11,8 @@ import Footer from "./Components/Footer.jsx";
 import Feedback from "./Pages/Feedback.jsx";
 import Preloader from "./Preloaders/Preloader.jsx"; // Import the new Preloader component
 import './index.css';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react"; // Import Speed Insights
 import Sponsors from "./Pages/Sponsors.jsx";
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
       {!loading && ( // Render the main content only after loading is complete
         <>
           <Navbar />
-          <Analytics/>
+          <Analytics />
+          <SpeedInsights /> {/* Add Speed Insights here */}
           <Routes>
             <Route path="/" element={<Root />} />
             <Route path="/about" element={<About />} />
@@ -38,14 +40,13 @@ function App() {
             <Route path="/sports" element={<Sports />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/feedback" element={<Feedback />} />
-            <Route path="/sponsors" element={<Sponsors/>}/>
+            <Route path="/sponsors" element={<Sponsors />} />
           </Routes>
           <Footer />
         </>
       )}
     </Router>
   );
-  
 }
 
 export default App;
