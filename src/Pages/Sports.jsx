@@ -22,7 +22,7 @@ function Sports() {
             <div className="game-details">
               <h3>Chess</h3>
               <p>Strategic game for two players. Checkmate your opponent's king!</p>
-              <button className="register-btn" onClick={() => window.open("https://forms.gle/5F8m6StgeDt2uDME7", "_blank")}>Register</button>
+              {/* <button className="register-btn" onClick={() => window.open("https://forms.gle/5F8m6StgeDt2uDME7", "_blank")}>Register</button> */}
             </div>
           </div>
           <div className="game-box">
