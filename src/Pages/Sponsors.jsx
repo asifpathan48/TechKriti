@@ -12,7 +12,6 @@ import Sponsor2 from "../assets/sponsors/logo2.jpg";
 import Sponsor3 from "../assets/sponsors/logo2.png";
 import Sponsor4 from "../assets/sponsors/logo4.png";
 import Sponsor5 from "../assets/sponsors/logo5.png";
-import Sponsor6 from "../assets/sponsors/logo6.png";
 import Sponsor7 from "../assets/sponsors/logo7.png";
 import Sponsor8 from "../assets/sponsors/logo8.png";
 import Sponsor9 from "../assets/sponsors/logo9.png";
@@ -27,7 +26,7 @@ import Sponsor17 from "../assets/sponsors/logo17.png";
 import Sponsor18 from "../assets/sponsors/logo18.png";
 
 const sponsors = [
-  Sponsor1, Sponsor2, Sponsor3, Sponsor4, Sponsor5, Sponsor6, Sponsor7,
+  Sponsor1, Sponsor2, Sponsor3, Sponsor4, Sponsor5, Sponsor7,
   Sponsor8, Sponsor9, Sponsor10, Sponsor11, Sponsor12, Sponsor13, Sponsor14,
   Sponsor15, Sponsor16, Sponsor17, Sponsor18
 ];
@@ -65,7 +64,7 @@ const Sponsors = () => {
               <Sponsor 
                 src={sponsor} 
                 alt={`Sponsor ${index + 1}`} 
-                link={sponsor === Sponsor11 ? "https://www.siliconmindstech.com/" : null} 
+                link={sponsor === Sponsor11 ? "https://www.siliconmindstech.com/" : sponsor === Sponsor15 ? "https://www.universaloverseasvizag.com/" : null} 
               />
             </SwiperSlide>
           ))}

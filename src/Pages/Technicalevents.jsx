@@ -102,10 +102,8 @@ function TechnicalEvents() {
   return (
     <div className="technicalevents-container">
       <h1 className="h1-container">Technical Events</h1>
-      <h1 className="registration-deadline">Registrations have been CLOSED!!
-        </h1>
       <br/>
-    <img src={WinPrizesImage} alt="prizes" className="prizes-image" />
+    {/* <img src={WinPrizesImage} alt="prizes" className="prizes-image" /> */}
       <div className="events-grid">
         {eventsData.map((event) => (
           <div key={event.id} className={`event-box ${expandedEvent === event.id ? "expanded" : ""}`}>
@@ -141,14 +139,9 @@ function TechnicalEvents() {
           </div>
         ))}
       </div>
-
+      <h1 className="events-finished">Thank you everyone for your active participation!
+        </h1>
       <br />
-      <h1 className="coordinator-text">
-      <br/>
-        If you want to register, Meet the Technical Coordinators 
-        <br/>
-        At College by 10:00 AM
-      </h1>
       {/* <button className="technical-combo-registration" onClick={() => window.open("https://forms.gle/q8Q2T9mqhVTvF2QP7", "_blank")}>
         Technical Events Combo Registration
       </button> */}

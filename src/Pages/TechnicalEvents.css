@@ -93,6 +93,10 @@ object-fit: contain;
   color: #ff6600;
 }
 
+.events-finished{
+  color: violet;
+}
+
 /* Category Details */
 .category-details {
   margin-top: 20px;
