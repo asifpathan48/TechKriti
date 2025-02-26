@@ -83,6 +83,24 @@
     color: white;
 }
 
+.final-years {
+    width: 100%;  /* Make it responsive */
+    max-width: 1200px;  /* Set a reasonable max width */
+    height: auto;  /* Maintain aspect ratio */
+    display: block; /* Remove any unwanted space */
+    margin: 0 auto; /* Center align */
+    border-radius: 10px; /* Optional: Adds smooth corners */
+  }
+
+  .coordinators{
+    width: 100%;  /* Make it responsive */
+    max-width: 1200px;  /* Set a reasonable max width */
+    height: auto;  /* Maintain aspect ratio */
+    display: block; /* Remove any unwanted space */
+    margin: 0 auto; /* Center align */
+    border-radius: 10px; /* Optional: Adds smooth corners */
+  }
+
 .text-container span {
     color: orange;
 }
@@ -219,6 +237,13 @@
         flex-direction: row;
     }
 
+    .final-years {
+        max-width: 95%; /* Adjust width for smaller screens */
+      }
+    
+      .coordinators{
+        max-width: 95%;
+      }
     .countdown-box {
         width: 80px;
         padding: 15px;
