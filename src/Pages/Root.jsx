@@ -20,7 +20,7 @@ function Root() {
       </div>
       <br/>
       <div>
-        <img src={FinalYears} alt=""  className='final-years'/>
+        {/* <img src={FinalYears} alt=""  className='final-years'/> */}
         <br/>
           <img src={Coordinators} alt="" className='coordinators' />
           <h1>The Coordinators of 

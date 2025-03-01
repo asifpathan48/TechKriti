@@ -25,18 +25,20 @@ html, body {
 /* Grid Layout for Images */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 images per row */
+  gap: 15px;
   padding: 20px;
+  justify-content: center;
 }
 
 /* Styling for Gallery Images */
 .gallery-img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  border-radius: 15px;
   object-fit: cover;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .gallery-img:hover {
@@ -76,21 +78,62 @@ html, body {
   transform: scale(1.1);
 }
 
+/* ============ MODAL STYLES ============ */
+
+/* Modal Background */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px; /* Adds space around the image */
+}
+
+/* Modal Content */
+.modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Enlarged Image */
+.modal-img {
+  max-width: 90vw; /* Prevents images from overflowing horizontally */
+  max-height: 90vh; /* Prevents images from overflowing vertically */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.9);
+  object-fit: contain; /* Ensures portrait images fit well */
+}
+
+/* Close Modal on Click */
+.image-modal:hover {
+  cursor: pointer;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
 /* Mobile Responsiveness: Stack images vertically */
 @media (max-width: 768px) {
   .gallery-grid {
-    display: flex; /* Change grid to flexbox */
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center images */
-    gap: 8px;
-    padding: 10px;
+    grid-template-columns: repeat(1, 1fr); /* One image per row */
   }
 
   .gallery-img {
-    width: 90%; /* Reduce image width for better spacing */
+    width: 95%; /* Reduce width for better spacing */
     max-width: 400px; /* Prevent images from becoming too large */
+    margin: 0 auto; /* Center the images */
   }
+}
 
+@media (max-width: 480px) {
   .gallery-icon {
     width: 40px; /* Slightly smaller on mobile */
     height: 40px;
