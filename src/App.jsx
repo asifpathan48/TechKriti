@@ -14,8 +14,7 @@ import './index.css';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react"; // Import Speed Insights
 import Sponsors from "./Pages/Sponsors.jsx";
-import GalleryIcon from "./Pages/GalleryIcon.jsx"
-import Gallery from "./Pages/Gallery.jsx";
+import Album from "./Pages/Album.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +30,6 @@ function App() {
       {loading ? <Preloader /> : null} {/* Show preloader while loading */}
       {!loading && ( // Render the main content only after loading is complete
         <>
-        <GalleryIcon/>
           <Navbar />
           <Analytics />
           <SpeedInsights /> {/* Add Speed Insights here */}
@@ -44,7 +42,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/feedback" element={<Feedback />} />
             <Route path="/sponsors" element={<Sponsors />} />
-            <Route path="/gallery" element={<Gallery/>}/>
+            <Route path="/album" element={<Album/>}/>
           </Routes>
           <Footer />
         </>

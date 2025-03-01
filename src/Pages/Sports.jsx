@@ -15,12 +15,8 @@ function Sports() {
       <h1>Sports 
         <br/>
         Events has been completed!!
-        <br/>
-        <span>
-          We thank everyone for their active participation
-        </span>
       </h1>
-
+      <hr/>
       <div className="section">
         <h2>Indoor Games</h2>
         <div className="games-container">
