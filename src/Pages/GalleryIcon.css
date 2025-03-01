@@ -1,0 +1,22 @@
+.gallery-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gallery-icon:hover {
+  background-color: #f3f3f3;
+  transform: scale(1.1);
+}
+
+.gallery-img {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+}

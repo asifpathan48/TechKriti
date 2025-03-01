@@ -21,11 +21,6 @@ function Root() {
       <br/>
       <div>
         <img src={FinalYears} alt=""  className='final-years'/>
-        <h1>Thank you everyone, for your participation in making the event 
-          <br/>
-          <span>a Massive Success</span>  
-          <br/>
-          in the history of BITS Vizag!</h1>
           <img src={Coordinators} alt="" className='coordinators' />
           <h1>The Coordinators of 
             <br/>
