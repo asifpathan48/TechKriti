@@ -40,6 +40,7 @@ const Footer = () => {
             <li><button onClick={() => handleNavigation("/contact")}>Contact</button></li>
             <li><button onClick={() => handleNavigation("/feedback")}>Feedback</button></li>
             <li><button onClick={() => handleNavigation("/sponsors")}>Sponsors</button></li>
+            <li><button onClick={() => handleNavigation("/album")}>Album</button></li>
           </ul>
         </div>
       </div>

@@ -1,77 +1,116 @@
 import React, { useState } from "react";
 import "./Album.css";
 
-const imageUrls = [
-  "https://techkriti-998488275.imgix.net/hod-madam-D7FkuJfG.jpg",
-  "https://techkriti-998488275.imgix.net/techkriti-banner-BtDu7pq1.jpg",
-  "https://techkriti-998488275.imgix.net/harshitha-image-DwzkMAXK.jpg",
-  "https://techkriti-998488275.imgix.net/komali-madam-C2aYbsW7.jpg",
-  "https://techkriti-998488275.imgix.net/chandini-yashoda-BbuFceoh.jpg",
-  "https://techkriti-998488275.imgix.net/srilakshmi-madam-x9yF6o-m.jpg",
-  "https://techkriti-998488275.imgix.net/stall-games-DfqS2xlc.jpg",
-  "https://techkriti-998488275.imgix.net/junior-classical-ByoTILkj.jpg",
-  "https://techkriti-998488275.imgix.net/principle-OUbZfVvY.jpg",
-  "https://techkriti-998488275.imgix.net/all-banners-DEIM_8yP.jpg",
-  "https://techkriti-998488275.imgix.net/royal-mech-ramana-BcScnCWD.jpg",
-  "https://techkriti-998488275.imgix.net/coordinators-BhRArhfp.jpg",
-  "https://techkriti-998488275.imgix.net/salaar-skit-imqPbQrd.jpg",
-  "https://techkriti-998488275.imgix.net/dance-juniors-Dc5n5qwI.jpg",
-  "https://techkriti-998488275.imgix.net/juniors-dance-wqNVtQPC.jpg",
-  "https://techkriti-998488275.imgix.net/overseas-stall-DdNNYHpn.jpg",
-  "https://techkriti-998488275.imgix.net/singing-Br0Wz1sX.jpg",
-  "https://techkriti-998488275.imgix.net/principal-sdp-sir-CoaflyAm.jpg",
-  "https://techkriti-998488275.imgix.net/boys-image-Bt5E-75e.jpg",
-  "https://techkriti-998488275.imgix.net/sarvik-new-CO-8rNoj.jpg",
-  "https://techkriti-998488275.imgix.net/girls-picture-BEUj8h-8.jpg",
-  "https://techkriti-998488275.imgix.net/state-dance-Dxp0u98O.jpg",
-  "https://techkriti-998488275.imgix.net/state-dance-2-D-Y8sIAL.jpg",
-  "https://techkriti-998488275.imgix.net/all-state-dance-vATZNwQ-.jpg",
-  "https://techkriti-998488275.imgix.net/final-years-pic-IqcR3CjJ.jpg",
-  "https://techkriti-998488275.imgix.net/ravindra-sir-BWXDFUt3.jpg",
-  "https://techkriti-998488275.imgix.net/staff-state-dance-CtvbDPTZ.jpg",
-  "https://techkriti-998488275.imgix.net/srilakshmi-madam-stage-uP9MiiFg.jpg",
-  "https://techkriti-998488275.imgix.net/technical-event-BNOgxlP-.jpg",
-  "https://techkriti-998488275.imgix.net/Poster-Presentation-C-Kg2EKr.jpg",
-  "https://techkriti-998488275.imgix.net/abcd-dance-2-EhvzulFC.jpg",
-  "https://techkriti-998488275.imgix.net/Krishna-Murthy-CZtJ1LHb.jpg",
-  "https://techkriti-998488275.imgix.net/Aruna-Cvsz6DiK.jpg",
-  "https://techkriti-998488275.imgix.net/dance-Dk1CPaMh.jpg",
-  "https://techkriti-998488275.imgix.net/pradeep-sir-D-zhbb4F.jpg",
-  "https://techkriti-998488275.imgix.net/abcd-dance-1-CB0qs3FN.jpg",
-  "https://techkriti-998488275.imgix.net/girls-enjoyment-Dq62p3c-.jpg",
-  "https://techkriti-998488275.imgix.net/staff-8sqmBUKS.jpg"
+import SecondYearJuniorsDance from "../assets/Album-images/2nd-year-juniors-dance.jpg";
+import AbcdDance1 from "../assets/Album-images/abcd-dance-1-min.jpg";
+import AbcdDance2 from "../assets/Album-images/abcd-dance-2.jpg";
+import AllBanners from "../assets/Album-images/all-banners.jpg";
+import AllStateDance from "../assets/Album-images/all-state-dance.jpg";
+import Aruna from "../assets/Album-images/Aruna.jpg";
+import BoysImage from "../assets/Album-images/boys-image.jpg";
+import ChandiniYashoda from "../assets/Album-images/chandini-yashoda.jpg";
+import DanceJuniors from "../assets/Album-images/dance-juniors.jpg";
+import Dance from "../assets/Album-images/dance.jpg";
+import GirlsEnjoyment from "../assets/Album-images/girls-enjoyment.jpg";
+import GirlsPicture from "../assets/Album-images/girls-picture.jpg";
+import HarshithaImage from "../assets/Album-images/harshitha-image.jpg";
+import HodMadam from "../assets/Album-images/hod-madam.jpg";
+import JuniorClassical from "../assets/Album-images/junior-classical.jpg";
+import JuniorsDance from "../assets/Album-images/juniors-dance.jpg";
+import KomaliMadam from "../assets/Album-images/komali-madam.jpg";
+import KrishnaMurthy from "../assets/Album-images/Krishna-Murthy.jpg";
+import OverseasStall from "../assets/Album-images/overseas-stall.jpg";
+import PosterPresentation from "../assets/Album-images/Poster-Presentation.jpg";
+import PradeepSir from "../assets/Album-images/pradeep-sir.jpg";
+import PrincipalSDPSir from "../assets/Album-images/principal-sdp-sir.jpg";
+import Principle from "../assets/Album-images/principle.jpg";
+import RavindraSir from "../assets/Album-images/ravindra-sir.jpg";
+import RoyalMechRamanaSpeech from "../assets/Album-images/royal-mech-ramana-speech.jpg";
+import RoyalMechRamana from "../assets/Album-images/royal-mech-ramana.jpg";
+import SalaarSkit from "../assets/Album-images/salaar-skit.jpg";
+import SarvikNew from "../assets/Album-images/sarvik-new.jpg";
+import Singing from "../assets/Album-images/singing.jpg";
+import SrilakshmiMadamStage from "../assets/Album-images/srilakshmi-madam-stage.jpg";
+import SrilakshmiMadam from "../assets/Album-images/srilakshmi-madam.jpg";
+import StaffStateDance from "../assets/Album-images/staff-state-dance.jpg";
+import Staff from "../assets/Album-images/staff.jpg";
+import StallGames from "../assets/Album-images/stall-games.jpg";
+import StateDance2 from "../assets/Album-images/state-dance-2.jpg";
+import StateDance from "../assets/Album-images/state-dance.jpg";
+import TechkritiBanner from "../assets/Album-images/techkriti-banner.jpg";
+import TechnicalEvent from "../assets/Album-images/technical-event.jpg";
+import FinalYears from "../assets/Album-images/final-years-pic.jpg";
+import Coordinators from "../assets/Album-images/coordinators.jpg";
+
+const images = [
+  { src: HodMadam, alt: "HOD Madam" },
+  { src: TechkritiBanner, alt: "Techkriti Banner" },
+  { src: HarshithaImage, alt: "Harshitha Image" },
+  { src: KomaliMadam, alt: "Komali Madam" },
+  { src: ChandiniYashoda, alt: "Chandini Yashoda" },
+  { src: SrilakshmiMadam, alt: "Srilakshmi Madam" },
+  { src: StallGames, alt: "Stall Games" },
+  { src: JuniorClassical, alt: "Junior Classical" },
+  { src: Principle, alt: "Principle" },
+  { src: AllBanners, alt: "All Banners" },
+  { src: RoyalMechRamana, alt: "Royal Mech Ramana" },
+  { src: SalaarSkit, alt: "Salaar Skit" },
+  { src: DanceJuniors, alt: "Dance Juniors" },
+  { src: OverseasStall, alt: "Overseas Stall" },
+  { src: Singing, alt: "Singing" },
+  { src: PrincipalSDPSir, alt: "Principal SDP Sir" },
+  { src: BoysImage, alt: "Boys Image" },
+  { src: SarvikNew, alt: "Sarvik New" },
+  { src: GirlsPicture, alt: "Girls Picture" },
+  { src: StateDance, alt: "State Dance" },
+  { src: StateDance2, alt: "State Dance 2" },
+  { src: AllStateDance, alt: "All State Dance" },
+  { src: RavindraSir, alt: "Ravindra Sir" },
+  { src: StaffStateDance, alt: "Staff State Dance" },
+  { src: SrilakshmiMadamStage, alt: "Srilakshmi Madam Stage" },
+  { src: TechnicalEvent, alt: "Technical Event" },
+  { src: PosterPresentation, alt: "Poster Presentation" },
+  { src: AbcdDance2, alt: "ABCD Dance 2" },
+  { src: KrishnaMurthy, alt: "Krishna Murthy" },
+  { src: Aruna, alt: "Aruna" },
+  { src: Dance, alt: "Dance" },
+  { src: RoyalMechRamanaSpeech, alt: "Royal Mech Ramana Speech" },
+  { src: AbcdDance1, alt: "ABCD Dance 1" },
+  { src: JuniorsDance, alt: "Juniors Dance" },
+  { src: GirlsEnjoyment, alt: "Girls Enjoyment" },
+  { src: PradeepSir, alt: "Pradeep Sir" },
+  { src: SecondYearJuniorsDance, alt: "2nd Year Juniors Dance" },
+  { src: Staff, alt: "Staff" },
 ];
 
-const Album = () => {
+export default function Album() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div className="gallery-container">
-      <h1 className="main-heading">TechKriti 2K25 Album</h1>
-
+      <h1 className="gallery-title">TechKriti 2K25 Album</h1>
       <div className="gallery-grid">
-        {imageUrls.map((image, index) => (
+        {images.map(({ src, alt }, index) => (
           <img
             key={index}
-            src={image}
-            alt={`Gallery ${index}`}
-            className="gallery-img"
-            onClick={() => setSelectedImage(image)} // Open image in modal
+            src={src}
+            alt={alt}
+            className="gallery-image"
+            onClick={() => setSelectedImage(src)}
           />
         ))}
       </div>
 
-      {/* Image Modal */}
       {selectedImage && (
-        <div className="image-modal">
-          <div className="modal-content">
-            <button className="close-btn" onClick={() => setSelectedImage(null)}>✖</button>
-            <img src={selectedImage} alt="Enlarged" className="modal-img" />
+        <div className="dialog-overlay" onClick={() => setSelectedImage(null)}>
+          <div className="dialog-box">
+            <img src={selectedImage} alt="Selected" className="dialog-image" />
+            <button className="close-button" onClick={() => setSelectedImage(null)}>
+              Close
+            </button>
           </div>
         </div>
       )}
     </div>
   );
-};
-
-export default Album;
+}
