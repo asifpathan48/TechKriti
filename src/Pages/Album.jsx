@@ -1,70 +1,71 @@
 import React, { useState } from "react";
 import "./Album.css";
 
-// Import images manually
-import img1 from "../assets/coordinators.jpg";
-import img2 from "../assets/final-years-pic.jpg";
-import img3 from "../assets/harshitha-image.jpg";
-import img4 from "../assets/hod-madam.jpg";
-import img5 from "../assets/royal-mech-ramana.jpg";
-import img6 from "../assets/srilakshmi-madam.jpg";
-import img7 from "../assets/techkriti-banner.jpg";
-import img8 from "../assets/all-banners.jpg";
-import img9 from "../assets/stall-games.jpg";
-import img10 from "../assets/komali-madam.jpg";
-import salarskit from "../assets/salaar-skit.jpg";
-import girlspicture from "../assets/girls-picture.jpg";
-import JuniorsDance from "../assets/dance-juniors.jpg";
-import GirlsJuniors from "../assets/juniors-dance.jpg";
-import Principal from "../assets/principle.jpg";
-import OverseasStalls from "../assets/overseas-stall.jpg";
-import SingingImage from "../assets/singing.jpg";
-import img11 from "../assets/principal-sdp-sir.jpg";
-import Sarvik from "../assets/sarvik-new.jpg";
-import ChandiniYashoda from "../assets/chandini-yashoda.jpg";
-import boysImage from "../assets/boys-image.jpg";
-import Juniorclassical from "../assets/junior-classical.jpg";
-import StateDance from "../assets/state-dance.jpg";
-import StateDance2 from "../assets/state-dance-2.jpg";
-import AllStateDance from "../assets/all-state-dance.jpg";
-import StaffStateDance from "../assets/staff-state-dance.jpg";
-import SrilakshmiMadamStage from "../assets/srilakshmi-madam-stage.jpg";
-import TechnicalEventLalith from "../assets/technical-event.jpg";
-import TechnicalEventPosterPresentation from "../assets/Poster-Presentation.jpg";
-import KrishnaMurthy from "../assets/Krishna-Murthy.jpg";
-import Aruna from "../assets/Aruna.jpg";
-import AbcdDance from "../assets/abcd-dance-1.jpg";
-import AbcdDance2 from "../assets/abcd-dance-2.jpg";
-import PradeepSir from "../assets/pradeep-sir.jpg";
-import Dance from "../assets/dance.jpg"
-import GirlsEnjoyment from "../assets/girls-enjoyment.jpg";
-import RavindraSir from "../assets/ravindra-sir.jpg";
-import Staff from "../assets/staff.jpg";
+const imageUrls = [
+  "https://techkriti-998488275.imgix.net/hod-madam-D7FkuJfG.jpg",
+  "https://techkriti-998488275.imgix.net/techkriti-banner-BtDu7pq1.jpg",
+  "https://techkriti-998488275.imgix.net/harshitha-image-DwzkMAXK.jpg",
+  "https://techkriti-998488275.imgix.net/komali-madam-C2aYbsW7.jpg",
+  "https://techkriti-998488275.imgix.net/chandini-yashoda-BbuFceoh.jpg",
+  "https://techkriti-998488275.imgix.net/srilakshmi-madam-x9yF6o-m.jpg",
+  "https://techkriti-998488275.imgix.net/stall-games-DfqS2xlc.jpg",
+  "https://techkriti-998488275.imgix.net/junior-classical-ByoTILkj.jpg",
+  "https://techkriti-998488275.imgix.net/principle-OUbZfVvY.jpg",
+  "https://techkriti-998488275.imgix.net/all-banners-DEIM_8yP.jpg",
+  "https://techkriti-998488275.imgix.net/royal-mech-ramana-BcScnCWD.jpg",
+  "https://techkriti-998488275.imgix.net/coordinators-BhRArhfp.jpg",
+  "https://techkriti-998488275.imgix.net/salaar-skit-imqPbQrd.jpg",
+  "https://techkriti-998488275.imgix.net/dance-juniors-Dc5n5qwI.jpg",
+  "https://techkriti-998488275.imgix.net/juniors-dance-wqNVtQPC.jpg",
+  "https://techkriti-998488275.imgix.net/overseas-stall-DdNNYHpn.jpg",
+  "https://techkriti-998488275.imgix.net/singing-Br0Wz1sX.jpg",
+  "https://techkriti-998488275.imgix.net/principal-sdp-sir-CoaflyAm.jpg",
+  "https://techkriti-998488275.imgix.net/boys-image-Bt5E-75e.jpg",
+  "https://techkriti-998488275.imgix.net/sarvik-new-CO-8rNoj.jpg",
+  "https://techkriti-998488275.imgix.net/girls-picture-BEUj8h-8.jpg",
+  "https://techkriti-998488275.imgix.net/state-dance-Dxp0u98O.jpg",
+  "https://techkriti-998488275.imgix.net/state-dance-2-D-Y8sIAL.jpg",
+  "https://techkriti-998488275.imgix.net/all-state-dance-vATZNwQ-.jpg",
+  "https://techkriti-998488275.imgix.net/final-years-pic-IqcR3CjJ.jpg",
+  "https://techkriti-998488275.imgix.net/ravindra-sir-BWXDFUt3.jpg",
+  "https://techkriti-998488275.imgix.net/staff-state-dance-CtvbDPTZ.jpg",
+  "https://techkriti-998488275.imgix.net/srilakshmi-madam-stage-uP9MiiFg.jpg",
+  "https://techkriti-998488275.imgix.net/technical-event-BNOgxlP-.jpg",
+  "https://techkriti-998488275.imgix.net/Poster-Presentation-C-Kg2EKr.jpg",
+  "https://techkriti-998488275.imgix.net/abcd-dance-2-EhvzulFC.jpg",
+  "https://techkriti-998488275.imgix.net/Krishna-Murthy-CZtJ1LHb.jpg",
+  "https://techkriti-998488275.imgix.net/Aruna-Cvsz6DiK.jpg",
+  "https://techkriti-998488275.imgix.net/dance-Dk1CPaMh.jpg",
+  "https://techkriti-998488275.imgix.net/pradeep-sir-D-zhbb4F.jpg",
+  "https://techkriti-998488275.imgix.net/abcd-dance-1-CB0qs3FN.jpg",
+  "https://techkriti-998488275.imgix.net/girls-enjoyment-Dq62p3c-.jpg",
+  "https://techkriti-998488275.imgix.net/staff-8sqmBUKS.jpg"
+];
 
 const Album = () => {
-  const images = [img7, img4, img3, img10, ChandiniYashoda,img6, img9, Juniorclassical, Principal,img8,  img5, img1,salarskit, JuniorsDance, GirlsJuniors,OverseasStalls, SingingImage,img11,boysImage,Sarvik, girlspicture,StateDance,StateDance2,AllStateDance,img2,RavindraSir,StaffStateDance,SrilakshmiMadamStage,TechnicalEventLalith,TechnicalEventPosterPresentation,AbcdDance2,KrishnaMurthy,Aruna,Dance,PradeepSir,AbcdDance,GirlsEnjoyment,Staff];
-
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div className="gallery-container">
       <h1 className="main-heading">TechKriti 2K25 Album</h1>
+
       <div className="gallery-grid">
-        {images.map((image, index) => (
+        {imageUrls.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Gallery ${index}`}
             className="gallery-img"
-            onClick={() => setSelectedImage(image)} // Open image on click
+            onClick={() => setSelectedImage(image)} // Open image in modal
           />
         ))}
       </div>
 
-      {/* Modal for Image Preview */}
+      {/* Image Modal */}
       {selectedImage && (
-        <div className="image-modal" onClick={() => setSelectedImage(null)}>
+        <div className="image-modal">
           <div className="modal-content">
+            <button className="close-btn" onClick={() => setSelectedImage(null)}>✖</button>
             <img src={selectedImage} alt="Enlarged" className="modal-img" />
           </div>
         </div>
