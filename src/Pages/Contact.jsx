@@ -25,6 +25,7 @@ function Contact() {
         <img src={AsifImage} alt="Profile" className="contact-image" />
         <h2 className="contact-name">Asif Pathan</h2>
        <b><p className="contact-role">Technical Coordinator & Web Developer</p></b> 
+       <b><p className="coordinator-phone">+91 6302152474</p></b>
       </div>
 
       <div className="event-coordinators">
