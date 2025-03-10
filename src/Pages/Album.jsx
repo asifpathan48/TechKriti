@@ -53,6 +53,8 @@ const images = [
   { src: Principle, alt: "Principle" },
   { src: AllBanners, alt: "All Banners" },
   { src: HarshithaImage, alt: "Harshitha Image" },
+  {src: FinalYears, alt:"Final Years"},
+  {src: Coordinators, alt:"Coordinators"},
   { src: RoyalMechRamana, alt: "Royal Mech Ramana" },
   { src: SalaarSkit, alt: "Salaar Skit" },
   { src: DanceJuniors, alt: "Dance Juniors" },
