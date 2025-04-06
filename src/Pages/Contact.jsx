@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.css';
-import AsifImage from '../assets/asif.jpeg';
 import AravindImage from '../assets/aravindImage.jpeg';
 import SaiImage from '../assets/sai.jpeg';
 import UpendraImage from '../assets/upendra.jpg';
@@ -16,13 +15,14 @@ import SonaliImage from '../assets/sonali.jpeg';
 import dummyImage from '../assets/dummy.jpg';
 import ZadeImage from '../assets/zadeImage.jpeg';
 // import KarthikImage from '../assets/karthik.jpg';
+import Asif from "../assets/Asif.jpg";
 import KarthikImage from '../assets/karthik.jpeg';
 
 function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-box">
-        <img src={AsifImage} alt="Profile" className="contact-image" />
+        <img src={Asif} alt="Profile" className="contact-image" />
         <h2 className="contact-name">Asif Pathan</h2>
        <b><p className="contact-role">Technical Coordinator & Web Developer</p></b> 
        <b><p className="coordinator-phone">+91 6302152474</p></b>
