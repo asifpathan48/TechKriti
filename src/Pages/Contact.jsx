@@ -12,17 +12,15 @@ import YaminiImage from '../assets/yamini.jpeg';
 import PrudhviImage from '../assets/prudhvi.jpeg';
 import SagarImage from '../assets/sagar.jpeg';
 import SonaliImage from '../assets/sonali.jpeg';
-import dummyImage from '../assets/dummy.jpg';
-import ZadeImage from '../assets/zadeImage.jpeg';
 // import KarthikImage from '../assets/karthik.jpg';
-import Asif from "../assets/Asif.jpg";
+import AsifImage from "../assets/Asif.jpg";
 import KarthikImage from '../assets/karthik.jpeg';
 
 function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-box">
-        <img src={Asif} alt="Profile" className="contact-image" />
+        <img src={AsifImage} alt="Profile" className="contact-image" />
         <h2 className="contact-name">Asif Pathan</h2>
        <b><p className="contact-role">Technical Coordinator & Web Developer</p></b> 
        <b><p className="coordinator-phone">+91 6302152474</p></b>
