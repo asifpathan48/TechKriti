@@ -13,14 +13,14 @@ import PrudhviImage from '../assets/prudhvi.jpeg';
 import SagarImage from '../assets/sagar.jpeg';
 import SonaliImage from '../assets/sonali.jpeg';
 // import KarthikImage from '../assets/karthik.jpg';
-import AsifImage from "../assets/my-image.jpg";
+import AsifImage from "../assets/new-image-mine.jpg";
 import KarthikImage from '../assets/karthik.jpeg';
 
 function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-box">
-        <img src={AsifImage} alt="Profile" className="contact-image" />
+        <img src={AsifImage} alt="Profile" className="asif-image"  />
         <h2 className="contact-name">Asif Pathan</h2>
        <b><p className="contact-role">Technical Coordinator & Web Developer</p></b> 
        <b><p className="coordinator-phone">+91 6302152474</p></b>
