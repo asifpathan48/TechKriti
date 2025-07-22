@@ -13,7 +13,7 @@ import PrudhviImage from '../assets/prudhvi.jpeg';
 import SagarImage from '../assets/sagar.jpeg';
 import SonaliImage from '../assets/sonali.jpeg';
 // import KarthikImage from '../assets/karthik.jpg';
-import AsifImage from "../assets/Asif.jpg";
+import AsifImage from "../assets/my-image.jpg";
 import KarthikImage from '../assets/karthik.jpeg';
 
 function Contact() {
